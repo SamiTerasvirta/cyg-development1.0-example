@@ -1,0 +1,23 @@
+.top-container {
+  background-color: #D3E4CD;
+  min-height: 200px;
+  padding: 40px 20px 0px 20px;
+  position: relative;
+}
+@media (max-width: 959px) {
+  .top-container {
+    min-height: auto;
+    padding-bottom: 20px;
+  }
+}
+.middle-container {
+  background-color: #FEF5ED;
+  padding: 20px;
+}
+.middle-container p:last-of-type {
+  margin-bottom: 0;
+}
+.bottom-container {
+  background-color: #ADC2A9;
+  padding: 20px;
+}

@@ -1,0 +1,30 @@
+@theme-color-1: #FEF5ED;
+@theme-color-2: #D3E4CD;
+@theme-color-3: #ADC2A9;
+@theme-color-4: #99A799;
+
+.top-container {
+    background-color: @theme-color-2;
+    min-height: 200px;
+    padding: 40px 20px 0px 20px;
+    position: relative;
+
+    @media (max-width: 959px) {
+        min-height: auto;
+        padding-bottom: 20px;
+    }
+}
+
+.middle-container {
+    background-color: @theme-color-1;
+    padding: 20px;
+
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.bottom-container {
+    background-color: @theme-color-3;
+    padding: 20px;
+}

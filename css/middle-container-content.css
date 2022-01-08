@@ -1,0 +1,24 @@
+.left-text {
+  display: block;
+  position: relative;
+  text-align: left;
+  width: 60%;
+}
+.full-left-aligned {
+  margin: 10px 0;
+  text-align: left;
+}
+.jumbotron {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  text-align: center;
+  width: 80%;
+}
+.btn-group {
+  text-align: unset;
+}
+.nav {
+  margin-bottom: 20px;
+}

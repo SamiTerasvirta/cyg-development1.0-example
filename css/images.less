@@ -1,0 +1,46 @@
+@theme-color-1: #FEF5ED;
+@theme-color-2: #D3E4CD;
+@theme-color-3: #ADC2A9;
+@theme-color-4: #99A799;
+
+img {
+    @media (max-width: 959px) {
+        display: none;
+    }
+}
+
+.body-images {
+    height: 150px;
+    width: 150px;
+}
+
+#cloud-1, #cloud-2 {
+    position: absolute;
+}
+
+#cloud-1 {
+    height: 160px;
+    right: 250px;
+    top: 0;
+    transform: rotate(-10deg);
+    width: 160px;
+}
+
+#cloud-2 {
+    height: 180px;
+    left: 80px;
+    top: 80px;
+    transform: rotate(10deg);
+    width: 180px;
+}
+
+#box-model {
+    border: 5px solid @theme-color-4;
+    height: auto;
+    position: absolute;
+    right: -57%;
+    top: 10px;
+    width: 250px;
+
+}
+ 

@@ -1,3 +1,147 @@
-body {
+.top-container {
+  background-color: #D3E4CD;
+  min-height: 200px;
+  padding: 40px 20px 0px 20px;
+  position: relative;
+}
+@media (max-width: 959px) {
+  .top-container {
+    min-height: auto;
+    padding-bottom: 20px;
+  }
+}
+.middle-container {
+  background-color: #FEF5ED;
+  padding: 20px;
+}
+.middle-container p:last-of-type {
+  margin-bottom: 0;
+}
+.bottom-container {
+  background-color: #ADC2A9;
+  padding: 20px;
+}
+h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+h2 {
+  font-family: 'VT323', monospace;
+  font-size: 2.5rem;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 959px) {
+  h2 {
+    display: none;
+  }
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0px;
+}
+p {
+  font-family: 'Merriweather', serif;
+}
+hr.text-divider {
+  border-color: #99A799;
+  border-style: none;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-top-style: dotted;
+  border-width: 7px;
+  width: 15%;
+}
+hr.footer-divider {
+  background-color: #99A799;
+  border: none;
+  height: 10px;
+  margin: 0;
+}
+.quote {
+  font-size: 0.6em;
+  font-style: italic;
+  display: inline-block;
+  left: 130px;
+  position: relative;
+  top: 30px;
+}
+@media (max-width: 959px) {
+  .quote {
+    display: none;
+  }
+}
+@media (max-width: 959px) {
+  img {
+    display: none;
+  }
+}
+.body-images {
+  height: 150px;
+  width: 150px;
+}
+#cloud-1,
+#cloud-2 {
+  position: absolute;
+}
+#cloud-1 {
+  height: 160px;
+  right: 250px;
+  top: 0;
+  transform: rotate(-10deg);
+  width: 160px;
+}
+#cloud-2 {
+  height: 180px;
+  left: 80px;
+  top: 80px;
+  transform: rotate(10deg);
+  width: 180px;
+}
+#box-model {
+  border: 5px solid #99A799;
+  height: auto;
+  position: absolute;
+  right: -57%;
+  top: 10px;
+  width: 250px;
+}
+.left-text {
+  display: block;
+  position: relative;
+  text-align: left;
+  width: 60%;
+}
+.full-left-aligned {
+  margin: 10px 0;
+  text-align: left;
+}
+.jumbotron {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  text-align: center;
+  width: 80%;
+}
+.btn-group {
+  text-align: unset;
+}
+.nav {
+  margin-bottom: 20px;
+}
+html {
   background-color: white;
+}
+body {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  margin: 0 auto;
+  max-width: 960px;
+  text-align: center;
 }

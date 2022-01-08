@@ -1,18 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="data/main.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&family=VT323&display=swap"
+        rel="stylesheet">
     <title> Development 1.0 🤸‍♀️</title>
 </head>
+
 <body>
-    <h1>Tervetuloa!</h1>
-    <p>Opettaminen on oppimisen jaloin muoto. Joten kertokaa vapaasti, kuinka asiat voisi tehdä toisin.</p>
+    <div class="top-container">
+        <div class="heading">
+            <img id="cloud-1"
+                src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/cloud_2601-fe0f.png"
+                alt="Cloud">
+            <h1>Development 1.0</h1>
+            <div>
+                <h2>Opettaminen on oppimisen jaloin muoto.</h2>
+                <i class="fa fa-quote-right quote" aria-hidden="true">-Old Finnish proverb</i>
+            </div>
+        </div>
+        <img id="cloud-2"
+            src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/cloud_2601-fe0f.png"
+            alt="Cloud">
+    </div>
+    <div class="middle-container">
+        <iframe src="https://giphy.com/embed/1cgbL0m6cvN3zL5RxV" width="150" height="150" frameBorder="0"
+            class="giphy-embed" allowFullScreen>
+        </iframe>
+        <p><a href="https://giphy.com/stickers/mrurbinaco-under-construction-mr-urbina-1cgbL0m6cvN3zL5RxV">via GIPHY</a>
+        </p>
+        <p>This here web site is not the coolest site - and it might not be perfectly constructed. However, it is my
+            intention to give you an idea of how to start structuring a basic html page. Strap in.
+        </p>
+        <hr class="text-divider">
+        <div class="left-text">
+            <p>So, html content is basically a set of boxes aligned next to each other - or on top of each other.
+                The display property of html elements can be set (amongst other values) to <em>block</em>,
+                <em>inline</em> or <em>inline-block</em>. There are a lot of other values we can use, but let's settle
+                for these - for the time being.
+            </p>
+            <p>First we need to understand that the <em>block</em> elements typically start a new line and also reserve
+                the whole width of their container. So, you might say that they 'block' other elements. Block-level
+                elements
+                are e.g. p, div, h1-h6, hr. You can find the complete list <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank"
+                    rel="noopener noreferrer">here</a>.
+            </p>
+            <img id="box-model" src="images/box-model.PNG" alt="Box model">
+        </div>
+        <div class="full-left-aligned">
+            <p>Generally block-level elements can contain inline elements and (sometimes) other block elements. Now, on
+                your html page (this page is 'index.html') you specify the <strong>content</strong> visible on this
+                screen. Try to refrain from manipulating the <em>styling</em> of your page within your html code.
+                Instead use a
+                CSS file for that.
+            </p>
+        </div>
+        <hr class="text-divider">
+        <div class="full-left-aligned">
+            <p>Up until now we have used CSS classes and id properties. All of these definitions and rules origin from a
+                single file called 'styles.css'. Actually we have used LESS which is basically CSS, with just a little
+                more. But we
+                have time to talk about that later. My point was that so far everything has been handwritten. Still,
+                that needs
+                not to be the case. Amongst other cool things which are nowadays available for us developers there is
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z" />
+                    <path
+                        d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z" />
+                </svg> for Bootstrap.
+            </p>
+            <div class="jumbotron">
+                <ul class="nav nav-pills">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">Profile</a></li>
+                    <li role="presentation"><a href="#">Messages</a></li>
+                </ul>
+                <p>This is to say, that we actually don't need to do all the styling from the scratch, and even while
+                    using Bootstrap, you can always further modify these ready-made bootstrap classes. Because, at the
+                    end of the day, bootstrap is just a one gigantic CSS file.
+                </p>
+            </div>
+        </div>
+        <hr class="text-divider">
+        <div class="full-left-aligned">
+            <p>So, that's it. Just a simple single page implementation. Use (preferably) a Chrome browser and check out
+                how this page is constructed. Use Chrome developer tools and you can even add an extension called
+                'Pesticide'. And of
+                course you can visit the repository of this project at <a
+                    href="http://https://github.com/SamiTerasvirta/cyg-development1.0-example" target="_blank"
+                    rel="noopener noreferrer">GitHub</a>.
+            </p>
+            <p>At the HTML-CSS part of your course we will go over subjects like HTML box-model, utilizing Emmet
+                abreviations, CSS-LESS, Visual Studio Code and just a little bit of AngularJS directives. See you then!
+            </p>
+        </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/sami-terasvirta" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a>
+        <a class="footer-link" href="https://github.com/SamiTerasvirta" target="_blank"
+            rel="noopener noreferrer">GitHub</a>
+        <p>© Sami Teräsvirta</p>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/phatplus" title="phatplus" target="_blank"
+                rel="noopener noreferrer">phatplus</a> from <a href="https://www.flaticon.com/" title="Flaticon"
+                target="_blank" rel="noopener noreferrer">www.flaticon.com</a></div>
+    </div>
 </body>
+
 </html>
